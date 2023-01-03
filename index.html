@@ -5,83 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2023년 버킷리스트</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
-      * {
-        font-family: "Dongle", sans-serif;
-      }
-      html {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-      .title {
-        color: white;
-        background-color: tomato;
-        font-size: 24px;
-        padding: 8px 14px;
-        border-radius: 8px;
-      }
-      .bg {
-        width: 360px;
-        background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
-      }
-      .msg {
-        font-size: 24px;
-        font-weight: bold;
-      }
-      .bucket {
-        width: 160px;
-        height: 160px;
-        background-size: cover;
-        background-position: center;
-        margin: 8px;
-        position: relative;
-        font-weight: bold;
-        font-size: 24px;
-        text-align: center;
-        word-break: keep-all;
-      }
-      .img1 {
-        background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
-        color: white;
-      }
-      .img2 {
-        background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
-        color: tomato;
-      }
-      .flex-row {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-      }
-      .center {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-      .done::after {
-        content: "";
-        width: 70%;
-        height: 70%;
-        background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/stamp.png");
-        background-size: cover;
-        background-position: center;
-        position: absolute;
-        top: 20%;
-      }
-      .wrap {
-        flex-wrap: wrap;
-      }
-    </style>
+    <link rel="stylesheet" href="./index.css" type="text/css" />
   </head>
   <body class="bg center">
     <h1 class="title">2023 신년계획</h1>
     <p class="msg">아자자 나는 해낼 수 있다!</p>
-    <div class="row flex-row wrap">
+    <div id="box" class="row flex-row wrap">
       <div class="bucket img1 center">5kg 감량하기</div>
       <div class="bucket img2 center">취업하기</div>
       <div class="bucket img2 center">예쁜집 이사하기</div>
@@ -89,5 +18,8 @@
       <div class="bucket img1 center">해외여행 다녀오기</div>
       <div class="bucket img2 center done">테스트 완료</div>
     </div>
+    <button class="add" onclick="inputVisible()">+ 새 목표 추가하기</div>
+        <input id="inputId" onchange="createBucket()" type="hidden" />
+        <script src="createBucket.js" type="text/javascript"></script>
   </body>
 </html>

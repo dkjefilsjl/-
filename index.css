@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+* {
+  font-family: "Dongle", sans-serif;
+}
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  color: white;
+  background-color: tomato;
+  font-size: 24px;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+.bg {
+  width: 360px;
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
+}
+.msg {
+  font-size: 24px;
+  font-weight: bold;
+}
+.bucket {
+  width: 160px;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  margin: 8px;
+  position: relative;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  word-break: keep-all;
+}
+.img1 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
+  color: white;
+}
+.img2 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
+  color: tomato;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.done::after {
+  content: "";
+  width: 70%;
+  height: 70%;
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/stamp.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 20%;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.add {
+  color: black;
+  background-color: transparent;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
