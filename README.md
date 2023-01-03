@@ -1,6 +1,7 @@
 # seoyeon's bucket list
 
 - 목적 : html, css 기초를 다지기 위한 버킷리스트 페이지 제작
+- 페이지 링크 : https://dkjefilsjl.github.io/simple_bucket_list_web/
 
 ----------
 
